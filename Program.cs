@@ -7,108 +7,117 @@ namespace hariAssignment
     {
         static void Main(string[] args)
         {
+            /*
+                   //Question1:
+
+                   Console.WriteLine("Question 1");
+                   int[] heights = { -4, -3, -2, -1, 4, 3, 2 };
+                   int max_height = LargestAltitude(heights);
+                   Console.WriteLine("Maximum altitude gained is {0}", max_height);
+                   Console.WriteLine();
+
             
-                    //Question1:
+                   //Question 2:
+                   Console.WriteLine("Question 2:");
+                   int[] nums = { 1, 6, 5, 3 };
+                   Console.WriteLine("Enter the target number:");
+                   int target = Int32.Parse(Console.ReadLine());
+                   int pos = SearchInsert(nums, target);
+                   Console.WriteLine("Insert Position of the target is : {0}", pos);
+                   Console.WriteLine("");
+           
 
-                    Console.WriteLine("Question 1");
-                    int[] heights = { -4, -3, -2, -1, 4, 3, 2 };
-                    int max_height = LargestAltitude(heights);
-                    Console.WriteLine("Maximum altitude gained is {0}", max_height);
-                    Console.WriteLine();
-
-                    //Question 2:
-                    Console.WriteLine("Question 2:");
-                    int[] nums = { 1, 6, 5, 3 };
-                    Console.WriteLine("Enter the target number:");
-                    int target = Int32.Parse(Console.ReadLine());
-                    int pos = SearchInsert(nums, target);
-                    Console.WriteLine("Insert Position of the target is : {0}", pos);
-                    Console.WriteLine("");
-        
             //Question3:
             Console.WriteLine("Question 3");
-            string[] words1 = { "cool", "lock", "cook" };
-            List<string> commonWords = CommonChars(words1);
-            Console.WriteLine("Common characters in all the strigs are:");
-            for (int i = 0; i < commonWords.Count; i++)
-            {
-                Console.Write(commonWords[i] + "\t");
-            }
-            Console.WriteLine();
-            
-          
-                        //Question 4:
-                        Console.WriteLine("Question 4");
-                        int[] arr1 = { 1, 2, 2, 1, 1, 3 }; // { 1, 2, 2, 1, 1, 3 };
-            bool unq = UniqueOccurrences(arr1);
-                        if (unq)
-                            Console.WriteLine("Number of Occurences of each element are same");
-                        else
-                            Console.WriteLine("Number of Occurences of each element are not same");
+           string[] words1 = { "cool", "lock", "cook" };
+           List<string> commonWords = CommonChars(words1);
+           Console.WriteLine("Common characters in all the strigs are:");
+           for (int i = 0; i < commonWords.Count; i++)
+           {
+               Console.Write(commonWords[i] + "\t");
+           }
+           Console.WriteLine();
+             
+           
 
-                        Console.WriteLine();
-      
-            //Question 5:
-            Console.WriteLine("Question 5");
-            List<List<string>> items = new List<List<string>>();
-            items.Add(new List<string>() { "phone", "blue", "pixel" });
-            items.Add(new List<string>() { "computer", "silver", "lenovo" });
-            items.Add(new List<string>() { "phone", "gold", "iphone" });
+                       //Question 4:
+                       Console.WriteLine("Question 4");
+                       int[] arr1 = { 1, 2, 2, 1, 1, 3 }; // { 1, 2, 2, 1, 1, 3 };
+           bool unq = UniqueOccurrences(arr1);
+                       if (unq)
+                           Console.WriteLine("Number of Occurences of each element are same");
+                       else
+                           Console.WriteLine("Number of Occurences of each element are not same");
 
-            string ruleKey = "type";
-            string ruleValue = "phone";
+                       Console.WriteLine();
+            
+            
+          //Question 5:
+          Console.WriteLine("Question 5");
+          List<List<string>> items = new List<List<string>>();
+          items.Add(new List<string>() { "phone", "blue", "pixel" });
+          items.Add(new List<string>() { "computer", "silver", "lenovo" });
+          items.Add(new List<string>() { "phone", "gold", "iphone" });
 
-            int matches = CountMatches(items, ruleKey, ruleValue);
-            Console.WriteLine("Number of matches for the given rule :{0}", matches);
-            Console.WriteLine();
+          string ruleKey = "type";
+          string ruleValue = "phone";
+
+          int matches = CountMatches(items, ruleKey, ruleValue);
+          Console.WriteLine("Number of matches for the given rule :{0}", matches);
+          Console.WriteLine();
+            
             
 
 
-            
-                   //Question 6:
-                   Console.WriteLine("Question 6");
-                   int[] Nums = { -1, 0 }; //{ 2, 7, 11, 15 }
-            int target_sum = -1;
-                   targetSum(Nums, target_sum);
-                   Console.WriteLine();
-            
-          
-                   //Question 7:
 
-                   Console.WriteLine("Question 7:");
-                   string allowed = "ab";
-                   string[] words = { "ad", "bd", "aaab", "baa", "badab" };
-                   int count = CountConsistentStrings(allowed, words);
-                   Console.WriteLine("Number of Consistent strings are : {0}", count);
-          
-                   //Question 8:
-                   Console.WriteLine("Question 8");
-                   int[] num1 = { 12, 28, 46, 32, 50 };
-                   int[] num2 = { 50, 12, 32, 46, 28 };
-                   int[] indexes = AnagramMappings(num1, num2);
-                   Console.WriteLine("Mapping of the elements are");
-                   for (int i = 0; i < indexes.Length; i++)
-                   {
-                       Console.Write(indexes[i] + "\t");
-                   }
-                   Console.WriteLine();
-                   Console.WriteLine();
+                             //Question 6:
+                             Console.WriteLine("Question 6");
+                             int[] Nums = { -1, 0 }; //{ 2, 7, 11, 15 }
+                      int target_sum = -1;
+                             targetSum(Nums, target_sum);
+                             Console.WriteLine();
+           
             
-                   //Question 9:
-                   Console.WriteLine("Question 9");
-                   int[] arr9 = { 4, -1, 2, 1 };
-                   int Ms = MaximumSum(arr9);
-                   Console.WriteLine("Maximun Sum contiguous subarray {0}", Ms);
-                   Console.WriteLine();
+
+                             //Question 7:
+
+                             Console.WriteLine("Question 7:");
+                             string allowed = "ab";
+                             string[] words = { "ad", "bd", "aaab", "baa", "badab" };
+                             int count = CountConsistentStrings(allowed, words);
+                             Console.WriteLine("Number of Consistent strings are : {0}", count);
+
             
-            //Question 10:
-            Console.WriteLine("Question 10");
-                   int[] arr10 = { 2, 3, 1, 2, 4, 3 };
-                   int target_subarray_sum = 7;
-                   int minLen = minSubArrayLen(target_subarray_sum, arr10);
-                   Console.WriteLine("Minimum length subarray with given sum is {0}", minLen);
-                   Console.WriteLine();
             
+                             //Question 8:
+                             Console.WriteLine("Question 8");
+                             int[] num1 = { 12, 28, 46, 32, 50 };
+                             int[] num2 = { 50, 12, 32, 46, 28 };
+                             int[] indexes = AnagramMappings(num1, num2);
+                             Console.WriteLine("Mapping of the elements are");
+                             for (int i = 0; i < indexes.Length; i++)
+                             {
+                                 Console.Write(indexes[i] + "\t");
+                             }
+                             Console.WriteLine();
+                             Console.WriteLine();
+             
+             */
+                             //Question 9:
+                             Console.WriteLine("Question 9");
+                             int[] arr9 = { 4, -1, 2, 1 };
+                             int Ms = MaximumSum(arr9);
+                             Console.WriteLine("Maximun Sum contiguous subarray {0}", Ms);
+                             Console.WriteLine();
+            
+                      //Question 10:
+                      Console.WriteLine("Question 10");
+                             int[] arr10 = { 2, 3, 1, 2, 4, 3 };
+                             int target_subarray_sum = 7;
+                             int minLen = minSubArrayLen(target_subarray_sum, arr10);
+                             Console.WriteLine("Minimum length subarray with given sum is {0}", minLen);
+                             Console.WriteLine();
+                      
 
         }
 
@@ -138,7 +147,7 @@ namespace hariAssignment
                 for (int i = 1; i < finalArray.Length; i++)
                 {
                     finalArray[i] = finalArray[i - 1] + gain[i - 1];
-                    Console.WriteLine("nEW VAL : " + finalArray[i]);
+                   // Console.WriteLine("nEW VAL : " + finalArray[i]);
                     if (finalArray[i] > maxVal)
                     {
                         maxVal = finalArray[i];
